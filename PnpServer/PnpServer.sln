@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32014.148
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PnpServer", "PnpServer\PnpServer.csproj", "{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0BEC58EC-172C-447A-817C-FB493B0C5164}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EA892730-64B5-4341-9674-4531D4A0B495}
+	EndGlobalSection
+EndGlobal
