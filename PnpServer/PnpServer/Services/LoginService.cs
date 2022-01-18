@@ -1,10 +1,11 @@
-﻿using PnpServer.Model;
+﻿
+using PnPManager.Server.Model;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading.Tasks;
 
-namespace PnpServer.Services
+namespace PnPManager.Server.Services
 {
     public class LoginService : ILoginService
     {

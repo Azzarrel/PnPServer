@@ -1,4 +1,4 @@
-﻿namespace PnpServer.Model
+﻿namespace PnPManager.Server.Model
 {
     public class LoginCache
     {

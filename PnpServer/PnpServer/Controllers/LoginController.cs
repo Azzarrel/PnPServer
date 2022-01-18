@@ -1,11 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using PnpServer.Model;
-using PnpServer.Services;
+using PnPManager.Server.Model;
+using PnPManager.Server.Services;
 using System;
 using System.Threading.Tasks;
 
-namespace PnpServer.Controllers
+namespace PnPManager.Server.Controllers
 {
 
   [ApiController]

@@ -1,7 +1,7 @@
-﻿using PnpServer.Model;
+﻿using PnPManager.Server.Model;
 using System.Threading.Tasks;
 
-namespace PnpServer.Services
+namespace PnPManager.Server.Services
 {
     public interface ILoginService
     {

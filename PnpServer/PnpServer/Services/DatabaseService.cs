@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PnpServer.Services
+namespace PnPManager.Server.Services
 {
   public class DatabaseService : IDatabaseService
   {

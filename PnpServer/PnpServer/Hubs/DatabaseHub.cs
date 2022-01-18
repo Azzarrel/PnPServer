@@ -1,12 +1,12 @@
 ﻿using Microsoft.AspNetCore.SignalR;
 using Newtonsoft.Json;
-using PnpServer.Services;
+using PnPManager.Server.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PnpServer.Hubs
+namespace PnPManager.Server.Hubs
 {
   public class DatabaseHub : Hub
   {

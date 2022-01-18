@@ -1,14 +1,20 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.0.32014.148
+VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PnpServer", "PnpServer\PnpServer.csproj", "{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PnPManager.Server", "PnpServer\PnPManager.Server.csproj", "{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0BEC58EC-172C-447A-817C-FB493B0C5164}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnPManager.Server.Interfaces", "PnPManager.Server.Interfaces\PnPManager.Server.Interfaces.csproj", "{B9D754B9-C8C9-47B5-83A9-B52CBFB94D07}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnPManager.Server.Implementation", "PnPManager.Server.Implementation\PnPManager.Server.Implementation.csproj", "{88F1D7E8-97F5-4DE5-844A-910B49714B7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PnPManager.Server.Data", "PnPManager.Server.Data\PnPManager.Server.Data.csproj", "{B833AE40-717B-44FB-AC8C-FD29A6E4FB48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -20,6 +26,18 @@ Global
 		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05DE38A7-A322-4B3B-BAB4-9E440A193C2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9D754B9-C8C9-47B5-83A9-B52CBFB94D07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9D754B9-C8C9-47B5-83A9-B52CBFB94D07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9D754B9-C8C9-47B5-83A9-B52CBFB94D07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9D754B9-C8C9-47B5-83A9-B52CBFB94D07}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88F1D7E8-97F5-4DE5-844A-910B49714B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F1D7E8-97F5-4DE5-844A-910B49714B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F1D7E8-97F5-4DE5-844A-910B49714B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F1D7E8-97F5-4DE5-844A-910B49714B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B833AE40-717B-44FB-AC8C-FD29A6E4FB48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B833AE40-717B-44FB-AC8C-FD29A6E4FB48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B833AE40-717B-44FB-AC8C-FD29A6E4FB48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B833AE40-717B-44FB-AC8C-FD29A6E4FB48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

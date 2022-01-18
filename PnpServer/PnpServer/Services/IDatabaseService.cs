@@ -2,7 +2,7 @@
 using System.Data;
 using System.Threading.Tasks;
 
-namespace PnpServer.Services
+namespace PnPManager.Server.Services
 {
   public interface IDatabaseService
   {

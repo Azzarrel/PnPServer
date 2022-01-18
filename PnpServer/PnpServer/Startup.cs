@@ -7,14 +7,14 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using PnpServer.Hubs;
-using PnpServer.Services;
+using PnPManager.Server.Hubs;
+using PnPManager.Server.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace PnpServer
+namespace PnPManager.Server
 {
   public class Startup
   {
@@ -35,6 +35,8 @@ namespace PnpServer
       services.AddSwaggerDocument();
       services.AddSignalR();
 
+      Implementation.Factory.AddServices(services); 
+
       services.AddSingleton<IDatabaseService, DatabaseService>();
             services.AddSingleton<ILoginService, LoginService>();
     }
@@ -49,6 +51,8 @@ namespace PnpServer
         app.UseSwaggerUi3();
       }
 
+      Data.Factory.ConfigureDatabase(app);
+   
 
       app.UseRouting();
 

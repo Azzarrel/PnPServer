@@ -1,6 +1,6 @@
 using System;
 
-namespace PnpServer
+namespace PnPManager.Server
 {
   public class WeatherForecast
   {
