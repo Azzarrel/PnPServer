@@ -14,6 +14,6 @@ namespace PnPManager.Server.Data.Model
 
     public int Value { get; set; }
 
-    public ICollection<Material> Ingredients { get; set; }
+    //public ICollection<Material> Ingredients { get; set; }
   }
 }

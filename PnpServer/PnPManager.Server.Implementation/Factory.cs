@@ -6,6 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Microsoft.Data.SqlClient;
+using PnPManager.Server.Implementation.Services;
 
 namespace PnPManager.Server.Implementation
 {
@@ -25,7 +26,7 @@ namespace PnPManager.Server.Implementation
 
       dbContextOptionsBuilder.UseSqlServer(connectionString);
 
-
+      services.AddSingleton<ILoginService, LoginService>();
 
       Data.Factory.AddServices(services, dbContextOptionsBuilder.Options);
     }
