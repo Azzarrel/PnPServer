@@ -16,14 +16,13 @@ namespace PnPManager.Server.Data
     public static void AddServices(IServiceCollection services, DbContextOptions contextOption)
     {
       services.AddSingleton(contextOption);
-      services.AddTransient<IMaterialRepository, MaterialRepository>();
-      services.AddTransient<IProductRepository, ProductRepository>();
-      services.AddTransient<MaterialContext>();
+      services.AddTransient<IUserRepository, UserRepository>();
+      services.AddTransient<DataBaseContext>();
     }
 
     public static void ConfigureDatabase(IApplicationBuilder app)
     {
-      var context = app.ApplicationServices.GetRequiredService<MaterialContext>();
+      var context = app.ApplicationServices.GetRequiredService<DataBaseContext>();
       context.Database.EnsureCreated();
       context.Database.Migrate();
     }

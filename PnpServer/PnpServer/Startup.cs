@@ -7,8 +7,6 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using PnPManager.Server.Hubs;
-using PnPManager.Server.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,8 +35,6 @@ namespace PnPManager.Server
 
       Implementation.Factory.AddServices(services); 
 
-      services.AddSingleton<IDatabaseService, DatabaseService>();
-            services.AddSingleton<ILoginService, LoginService>();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,11 +53,6 @@ namespace PnPManager.Server
       app.UseRouting();
 
       app.UseAuthorization();
-
-      app.UseEndpoints(endpoints =>
-      {
-        endpoints.MapHub<DatabaseHub>("/databasehub");
-      });
 
       app.UseEndpoints(endpoints =>
       {

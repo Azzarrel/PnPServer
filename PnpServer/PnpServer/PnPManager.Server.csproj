@@ -21,4 +21,14 @@
     <ProjectReference Include="..\PnPManager.Server.Implementation\PnPManager.Server.Implementation.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="PnPManager.Shared.Interfaces">
+      <HintPath>..\..\PnPManager.Shared.Interfaces.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Hubs\" />
+  </ItemGroup>
+
 </Project>
